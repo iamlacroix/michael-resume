@@ -45,7 +45,7 @@ configure :build do
   # activate :sprockets
 
   # For example, change the Compass output style for deployment
-  activate :minify_css, :ignore => ['.css']
+  activate :minify_css, :ignore => [%r{fonts}]
 
   # Minify Javascript on build
   activate :minify_javascript

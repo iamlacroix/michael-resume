@@ -4,15 +4,20 @@
   padding-left: $page-gutter;
 }
 
+.l-section {
+  @include row;
+  margin-bottom: 1em;
+}
+
 @mixin ipad-layout {
 
   .l-contact-item {
     @include span-columns(4);
   }
 
-  .l-leadership {
+  .l-skills {
     @include span-columns(6);
-    @include nth-omega(2n);
+    @include omega(2n);
   }
 
 } // @mixin ipad-layout
@@ -28,10 +33,6 @@
     @include omega;
   }
 
-  .l-meta {
-    @include row;
-  }
-
   .l-contact {
     @include row;
     margin-top: 2em;
@@ -39,6 +40,10 @@
 
   .l-contact-item {
     @include span-columns(3 of 9);
+  }
+
+  .l-meta {
+    @include row;
   }
 
   .l-position {

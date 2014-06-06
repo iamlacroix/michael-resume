@@ -1,7 +1,6 @@
 // Basic Elements
 
 body {
-  border-top: 0.125em solid $pink;
   background: $white;
   @include radial-gradient($white, darken($white, 1.25%));
   color: $black;

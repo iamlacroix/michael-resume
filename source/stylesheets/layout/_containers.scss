@@ -69,6 +69,15 @@
   @include desktop-layout;
 }
 
+@media print {
+  @include ipad-layout;
+  @include desktop-layout;
+
+  .l-titling {
+    font-size: 0.625em;
+  }
+}
+
 .old-ie {
   @include ipad-layout;
   @include desktop-layout;

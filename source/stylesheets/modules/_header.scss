@@ -15,4 +15,10 @@
     margin-top: 0.625em;
   }
 
+  @media print {
+    .l-contact {
+      margin-top: 1.25em;
+      font-size: 0.875em;
+    }
+  }
 } // #header
